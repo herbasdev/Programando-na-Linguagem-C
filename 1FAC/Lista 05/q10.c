@@ -41,11 +41,11 @@ void main()
   mediaMulher = (somaMulher / totalMulher);
   mediaHomem = (somaHomem / totalHomem);
 
-  percentualHomem = ((totalHomem / 50) * 100.0);
+  percentualHomem = (float) totalHomem / 50;
 
-  printf("\nMaior altura encontrada: %.2f", maiorAltura);
-  printf("\nMenor altura encontrada: %.2f", menorAltura);
-  printf("\nMedia de altura das mulheres: %.2f", mediaMulher);
-  printf("\nMedia de altura dos homens: %.2f", mediaHomem);
-  printf("\nPercentual de homens na populacao: %.2f", percentualHomem);
+  printf("\nMaior altura encontrada: %.2fm", maiorAltura);
+  printf("\nMenor altura encontrada: %.2fm", menorAltura);
+  printf("\nMedia de altura das mulheres: %.2fm", mediaMulher);
+  printf("\nMedia de altura dos homens: %.2fm", mediaHomem);
+  printf("\nPercentual de homens na populacao: %.2f%%", percentualHomem*100);
 }
